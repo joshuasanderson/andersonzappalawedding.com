@@ -1,0 +1,39 @@
+.column,
+.columns {
+    width: 100%;
+    float: left;
+}
+
+// Screens larger 768px.
+// Anything < 769px, all columns are 100% wide.
+@media (min-width: 769px) {
+    .column,
+    .columns {
+        margin-left: 3%;
+    }
+
+    .column:first-child,
+    .columns:first-child {
+        margin-left: 0;
+    }
+
+    .one.column,
+    .one.columns                    { width: 4.66666666667%; }
+    .two.columns                    { width: 13.3333333333%; }
+    .three.columns                  { width: 22%;            }
+    .four.columns                   { width: 30%; }
+    .five.columns                   { width: 39.3333333333%; }
+    .six.columns                    { width: 47%;            }
+    .seven.columns                  { width: 56.6666666667%; }
+    .eight.columns                  { width: 65.3333333333%; }
+    .nine.columns                   { width: 74.0%;          }
+    .ten.columns                    { width: 82.6666666667%; }
+    .eleven.columns                 { width: 91.3333333333%; }
+    .twelve.columns                 { width: 100%; margin-left: 0; }
+
+    .one-third.column               { width: 30.6666666667%; }
+    .two-thirds.column              { width: 65.3333333333%; }
+
+    .one-half.column                { width: 48%; }
+    .all.columns { width: 100%; margin-left: 0;}
+}

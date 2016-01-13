@@ -1,0 +1,104 @@
+/* Typography
+** - Headers
+** - Paragraph
+** - Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 700;
+$ultra-bold: 900;
+
+// Base Font
+//$base-font-family: 'Crete Round', serif;
+$base-font-family: 'Arvo', serif;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+$sans-serif-font: 'Lato', sans-serif;
+$hero-font: 'Josefin Sans', sans-serif;
+$hero-font2: 'Old Standard TT', serif;
+
+$header-font-family: 'Lusitana', serif;
+$handwriting-font-family: 'Alex Brush', sans-serif;
+
+h1, h2, h3, h4, h5 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1.2;
+    font-family: $handwriting-font-family;
+}
+
+h2 {
+    font-size: 2.75em;
+    line-height: 1.25;
+    font-family: $header-font-family;
+}
+
+h3 {
+    font-size: 2em;
+    line-height: 1.3;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    color: $green;
+}
+
+h4 {
+    font-size: 1.25em;
+    line-height: 1.2;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    color: $pink;
+}
+
+h5 {
+    font-size: 1.15em;
+    line-height: 1.6;
+    font-family: $header-font-family;
+}
+
+p {
+    font-size: 1.25em;
+    margin-top: 0;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &a:hover {
+        color: $base-grey;
+    }
+}
+
+.hero-text {
+    h1 {
+        font-family: $hero-font2;
+        font-size: 75px;
+        font-weight: 400;
+        margin: 1.5em auto 0.3em;
+        font-style: italic;
+        color: $white;
+        text-transform: uppercase;
+
+        @media (max-width: 768px) {
+            font-size: 45px;
+        }
+    }
+    h2 {
+        font-family: $hero-font;
+        font-size: 40px;
+        color: $white;
+
+        @media (max-width: 768px) {
+            font-size: 25px;
+        }
+    }
+}

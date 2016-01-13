@@ -1,0 +1,232 @@
+html {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-size: 17px;
+}
+
+body {
+    background-color: $white;
+    font-size: 1em;
+    font-family: $base-font-family;
+    font-weight: 400;
+    font-style: normal;
+    color: $base-grey;
+    line-height: 1.9em;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    position: relative;
+}
+
+// Credits: The New Box Sizing Reset - http://callmenick.com/post/the-new-box-sizing-reset
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container:after,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    position: fixed;
+    padding: 0px 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: $white;
+
+    .logo {
+        vertical-align: -webkit-baseline-middle;
+        vertical-align: middle;
+        display: inline-block;
+        width: 7%;
+
+        i {
+            color: $pink;
+        }
+
+        span {
+            font-size: 1.5em;
+        }
+    }
+
+    .desktop-nav {
+        nav {
+            text-align: center;
+            display: inline-block;
+            width: 90%;
+
+            .menu-link {
+                display: inline-block;
+                margin: 15px;
+                -webkit-transition: all 500ms ease;
+                transition: all 500ms ease;
+                color: #adadad;
+                font-family: $sans-serif-font;
+                font-size: 1em;
+                font-weight: 400;
+                letter-spacing: 1px;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: $base-grey;
+                }
+            }
+        }
+    }
+
+    .mobile-nav {
+        display: none;
+
+        &.menu-collapsed {
+            transition: all .25s;
+            position: fixed;
+            top: 10px;
+            left: 9px;
+            height: 36px;
+            width: 36px;
+            z-index: 1;
+            cursor: pointer;
+            ul {
+                transition: all .05s;
+                position: fixed;
+                left: -9000px;
+            }
+        }
+
+        .bar {
+            position: fixed;
+            left: 12px;
+            top: 24px;
+            border-radius: 2px;
+            height: 4px;
+            width: 30px;
+            background-color: rgba(255, 255, 255, 0.75);
+            &:before {
+                transition: all .25s;
+                content: "";
+                position: absolute;
+                left: 0;
+                top: -8px;
+                height: 4px;
+                border-radius: 2px;
+                width: 30px;
+                background-color: rgba(255, 255, 255, 0.75);
+            }
+            &:after {
+                transition: all .25s;
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 8px;
+                border-radius: 2px;
+                height: 4px;
+                width: 30px;
+                background-color: rgba(255, 255, 255, 0.75);
+            }
+
+            &:hover {
+                &:before {
+                    top: -10px;
+                }
+                &:after {
+                    top: 10px;
+                }
+            }
+        }
+
+        &.menu-expanded {
+            transition: all .25s;
+            text-align: center;
+            line-height: 200px;
+            height: 100%;
+            width: 100%;
+            border-radius: 0px;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.85);
+            ul {
+                transition: all .05s;
+                position: relative;
+                left: 0;
+                z-index: 2;
+            }
+            a {
+                transition: all .15s;
+                text-decoration: none;
+                color: white;
+                font-size: 2em;
+                font-family: 'Quicksand', sans-serif;
+                padding: 5px;
+                &:hover {
+                    transition: all .15s;
+                    letter-spacing: 2px;
+                    border: 1px solid rgba(255, 255, 255, .15);
+                }
+            }
+
+            .bar {
+                background-color: transparent;
+                transition: all .25s;
+                &:before {
+                    transition: all .25s;
+                    content: "";
+                    transform: rotate(45deg);
+                    top: -0px;
+                }
+                &:after {
+                    transition: all .25s;
+                    content: "";
+                    transform: rotate(-45deg);
+                    top: 0px;
+                }
+            }
+        }
+    }
+}
+
+// Screen width < 849px
+@media (max-width: 849px) {
+    header {
+        padding: 0px;
+
+        .desktop-nav {
+            display: none;
+        }
+
+        .mobile-nav {
+            display: block;
+        }
+    }
+}
+
+footer {
+    height: 75px;
+    border-top: 3px solid #5DB686;
+    background-color: $green;
+}

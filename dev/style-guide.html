@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jessica Zappala & Joshua Anderson Are Engaged to Be Married | August 06, 2016</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles/css/site.css">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+            <div class="logo">
+                <a href="/" title="Anderson Zappala Wedding">
+                    <img src="assets/images/heart.png" title="AZ" />
+                </a>
+            </div>
+
+            <nav>
+                <a class="menu-link" href="#" title="Test">Home</a>
+                <a class="menu-link" href="#" title="Test">We're getting married</a>
+                <a class="menu-link" href="#" title="Test">Wedding Party</a>
+                <a class="menu-link" href="#" title="Test">When & Where</a>
+                <a class="menu-link" href="#" title="Test">Lodgings</a>
+                <a class="menu-link" href="#" title="Test">Photos</a>
+                <a class="menu-link" href="#" title="Test">RSVP</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <section id="intro" class="example no-border">
+                <p>
+                    This page will go over all the different methods, types and styles of the main boilerplate I want to use for projects going forward.
+                    Below are sections that go from the grid system used, typography, buttons, forms and more.
+                </p>
+            </section>
+        </div>
+
+        <div class="container">
+            <section id="typography" class="example">
+                <h5 class="header">Typography</h5>
+                <p>
+                    The typography for the boilerplate consists of common headers, paragraph tag, and links.
+                </p>
+                </p>
+                <div class="row">
+                    <div class="six columns">
+                        <h1>H1 Heading</h1>
+                        <h2>H2 Heading</h2>
+                        <h3>H3 Heading</h3>
+                        <h4>H4 Heading</h4>
+                        <h5>H5 Heading</h5>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="container">
+            <section id="map" class="example">
+                <div class="map-wrapper">
+                    <div id='anderson_wedding_map'></div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- Javascripts -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAp8SmTcNZMW8xBcR8SJcDT7IoFLJQmc7s&sensor=false&extension=.js'></script>
+    <script src="assets/js/vender/google_map.js"></script>
+    <script src="assets/js/vender/jquery.scrollto.js"></script>
+    <script src="lib/js/jquery-easing-1.3.js"></script>
+
+    <!-- Initiate the auto smooth scroll for the menu -->
+    <script>
+        $(document).ready(function () {
+            $('nav a').on('click', function (e) {
+                e.preventDefault();
+                $('html,body').scrollTo(this.hash, this.hash);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
