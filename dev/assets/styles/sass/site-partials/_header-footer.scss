@@ -1,55 +1,3 @@
-html {
-    height: 100%;
-    -webkit-font-smoothing: antialiased;
-    font-size: 17px;
-}
-
-body {
-    background-color: $white;
-    font-size: 1em;
-    font-family: $base-font-family;
-    font-weight: 400;
-    font-style: normal;
-    color: $base-grey;
-    line-height: 1.9em;
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-    position: relative;
-}
-
-// Credits: The New Box Sizing Reset - http://callmenick.com/post/the-new-box-sizing-reset
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-#wrapper {
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-
-.container {
-    position: relative;
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.container:after,
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 header {
     position: fixed;
     padding: 0px 20px;
@@ -161,32 +109,41 @@ header {
         }
 
         &.menu-expanded {
-            transition: all .25s;
+            transition: all .10s;
             text-align: center;
-            line-height: 200px;
             height: 100%;
             width: 100%;
             border-radius: 0px;
             top: 0;
             left: 0;
-            background-color: rgba(0, 0, 0, 0.85);
-            ul {
-                transition: all .05s;
-                position: relative;
-                left: 0;
-                z-index: 2;
-            }
-            a {
-                transition: all .15s;
-                text-decoration: none;
-                color: white;
-                font-size: 2em;
-                font-family: 'Quicksand', sans-serif;
-                padding: 5px;
-                &:hover {
+            background-color: rgba(184, 235, 208, 0.95);
+
+            nav.mobile {
+                margin-top: 7em;
+
+                ul {
+                    transition: all .05s;
+                    position: relative;
+                    left: 0;
+                    z-index: 2;
+
+                    li {
+                        margin: 2em 0;
+                    }
+                }
+
+                a {
                     transition: all .15s;
-                    letter-spacing: 2px;
-                    border: 1px solid rgba(255, 255, 255, .15);
+                    text-decoration: none;
+                    color: white;
+                    font-size: 2em;
+                    font-family: 'Quicksand', sans-serif;
+                    padding: 5px;
+                    &:hover {
+                        transition: all .15s;
+                        letter-spacing: 2px;
+                        border: 1px solid rgba(255, 255, 255, .15);
+                    }
                 }
             }
 
@@ -211,7 +168,7 @@ header {
 }
 
 // Screen width < 849px
-@media (max-width: 849px) {
+@media (max-width: $large) {
     header {
         padding: 0px;
 
@@ -229,4 +186,6 @@ footer {
     height: 75px;
     border-top: 3px solid #5DB686;
     background-color: $green;
+    text-align: center;
+    padding-top: 1em;
 }

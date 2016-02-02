@@ -1,27 +1,5 @@
-/* Typography
-** - Headers
-** - Paragraph
-** - Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-// Font weights
-$light: 100;
-$regular: 400;
-$bold: 700;
-$ultra-bold: 900;
-
-// Base Font
-//$base-font-family: 'Crete Round', serif;
-$base-font-family: 'Arvo', serif;
-$base-font-weight: $regular;
-$base-font-size: 13px;
-$base-line-height: 1.4;
-$sans-serif-font: 'Lato', sans-serif;
-$hero-font: 'Josefin Sans', sans-serif;
-$hero-font2: 'Old Standard TT', serif;
-
-$header-font-family: 'Lusitana', serif;
-$handwriting-font-family: 'Alex Brush', sans-serif;
+// Typography
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 h1, h2, h3, h4, h5 {
     margin-top: 0;
@@ -80,7 +58,7 @@ a {
 
 .hero-text {
     h1 {
-        font-family: $hero-font2;
+        font-family: $hero-font-serif;
         font-size: 75px;
         font-weight: 400;
         margin: 1.5em auto 0.3em;
@@ -93,7 +71,7 @@ a {
         }
     }
     h2 {
-        font-family: $hero-font;
+        font-family: $hero-font-sans;
         font-size: 40px;
         color: $white;
 

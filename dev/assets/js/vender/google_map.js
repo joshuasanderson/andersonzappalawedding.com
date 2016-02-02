@@ -3,10 +3,17 @@
 google.maps.event.addDomListener(window, 'load', init);
 var map;
 var isDraggable = $(document).width() > 480 ? true : false;
+var lat = 43.053947;
+var long = -70.801026;
+
+if(!isDraggable) {
+    lat = 43.053194;
+    long = -70.8242;
+}
 
 function init() {
     var mapOptions = {
-        center: new google.maps.LatLng(43.053947, -70.801026),
+        center: new google.maps.LatLng(lat, long),
         zoom: 13,
         zoomControl: true,
         zoomControlOptions: {
@@ -181,7 +188,7 @@ function init() {
                 iw.close();
                 infoWindowVisible(false);
             } else {
-                var html = "div class='google-maps-popup' style='color:#000;background-color:#fff;padding:5px;width:150px;'><h4>" + title + "</h4><p>" + desc + "<p><p>" + telephone + "<p><a target='_blank' href='" + link + "'' >" + 'Website' + "<a></div>";
+                var html = "<div class='google-maps-popup' style='color:#000;background-color:#fff;padding:5px;width:150px;'><h4>" + title + "</h4><p>" + desc + "<p><p>" + telephone + "<p><a target='_blank' href='" + link + "'' >" + 'Website' + "<a></div>";
                 iw = new google.maps.InfoWindow({
                     content: html
                 });

@@ -1,0 +1,25 @@
+// Responsive Media Queries
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$small: 480px;
+$small-medium: 650px;
+$medium: 768px;
+$large: 960px;
+$extra-large: 1200px;
+
+// Font Settings
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+$light: 100;
+$regular: 400;
+$bold: 700;
+$ultra-bold: 900;
+
+$base-font-family: 'Arvo', serif;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+$sans-serif-font: 'Lato', sans-serif;
+$hero-font-sans: 'Josefin Sans', sans-serif;
+$hero-font-serif: 'Old Standard TT', serif;
+
+$header-font-family: 'Lusitana', serif;
+$handwriting-font-family: 'Alex Brush', sans-serif;

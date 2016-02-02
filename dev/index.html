@@ -34,81 +34,116 @@
                     <a class="menu-link" href="#hero" title="We're Getting Married!">We're getting married</a>
                     <a class="menu-link" href="#details" title="Wedding Details">Wedding Details</a>
                     <a class="menu-link" href="#lodging" title="Lodging">Lodging</a>
+                    <a class="menu-link" href="#story" title="Our Story">Our Story</a>
+                    <a class="menu-link" href="#party" title="Wedding Party">Wedding Party</a>
                     <a class="menu-link" href="#registry" title="Registry">Registry</a>
-                    <a class="menu-link" href="#rsvp" title="RSVP">RSVP</a>
                 </nav>
             </div>
 
             <div class="mobile-nav menu-collapsed">
                 <div class="bar"></div>
-                <nav>
+                <nav class="mobile">
                     <ul>
-                        <li><a href="#">We're Getting Married</a></li>
-                        <li><a href="#">Wedding Details</a></li>
-                        <li><a href="#">Lodging</a></li>
-                        <li><a href="#">Registry</a></li>
-                        <li><a href="#">RSVP</a></li>
+                        <li><a href="#hero">We're Getting Married</a></li>
+                        <li><a href="#details">Wedding Details</a></li>
+                        <li><a href="#lodging">Lodging</a></li>
+                        <li><a href="#registry">Registry</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <section id="hero">
-            <div class="text">
-                <h1>We're Getting Married!</h1>
-                <h2>August 06, 2016</h2>
-            </div>
+        <section id="hero" class="full-screen-image">
+            <h1 class="full-screen-image-title">
+                <div class="top">We're Getting Married!</div>
+                <div class="bottom">August 06, 2016</div>
+            </h1>
         </section>
 
-        <section id="details" class="content fade">
+        <section id="details" class="content">
             <div class="container">
                 <h1>Wedding Details</h1>
 
-                <div class="four columns">
-                    <i class="fa fa-heart-o fa-5x"></i>
-                    <h4>Ceremony 4:30PM</h4>
-                    <p>
-                        Join us on the lawn of the country club while we exchange our vows with a view of the greens as our back drop.
-                    </p>
-                </div>
-                <div class="four columns">
-                    <i class="fa fa-glass fa-5x"></i>
-                    <h4>Cocktails 5:00PM</h4>
-                    <p>
-                        Enjoy drinks and hors d’oeuvres on the outdoor patio overlooking the greens and garden.
-                    </p>
-                </div>
-                <div class="four columns">
-                    <i class="fa fa-cutlery fa-5x"></i>
-                    <h4>Dinner & Dancing 6:00PM</h4>
-                    <p>
-                        Time to celebrate! As the sun sets, dinner will be held inside the reception hall, with dancing to follow.
-                    </p>
+                <div class="row">
+                    <div class="column">
+                        <i class="fa fa-heart-o fa-5x"></i>
+                        <h4>Ceremony 6:00PM</h4>
+                        <p>
+                            Join us on the lawn of the country club while we exchange our vows with a view of the greens as our back drop.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <i class="fa fa-glass fa-5x"></i>
+                        <h4>Cocktails 6:30PM</h4>
+                        <p>
+                            Enjoy drinks and hors d’oeuvres on the outdoor patio overlooking the greens and garden.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <i class="fa fa-cutlery fa-5x"></i>
+                        <h4>Dinner & Dancing 7:30PM</h4>
+                        <p>
+                            Time to celebrate! As the sun sets, dinner will be held inside the reception hall, with dancing to follow.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="all columns country-club">
-                    <h3>The Portsmouth Country Club</h3>
-                    <h4>
-                        <a href="http://maps.apple.com/?daddr=80+Country+Club+Ln+Greenland+NH+03840" target="_blank">Directions</a>
-                    </h4>
-                    <div class="map-wrapper">
-                        <div id='anderson_wedding_map'></div>
+                <div class="row">
+                    <div class="column country-club">
+                        <h3>The Portsmouth Country Club</h3>
+                        <a href="http://maps.apple.com/?daddr=80+Country+Club+Ln+Greenland+NH+03840" target="_blank" class="button">Directions</a>
+                        <div class="map-wrapper">
+                            <div id='anderson_wedding_map'></div>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <section id="lodging" class="content pink fade">
+        <section id="lodging" class="content pink">
             <div class="container">
                 <h1>Lodging</h1>
                 <p>
-                    More information coming soon ...
+                    There are a number of available hotels with openings around downtown Portsmouth and also right outside the traffic circle. Below are ones we recommend.
                 </p>
+
+                <div class="row hotels">
+                    <div class="column">
+                        <div class="hotel-item">
+                            <a href="http://www.marriott.com/hotels/travel/psmfi-fairfield-inn-portsmouth-seacoast/" title="Marriot Fairfield Inn Portsmouth Downtown" target="_blank">
+                                <img src="http://cache.marriott.com/propertyimages/brandgeneric/fn/Fairfield_Inn_logo_L.png" title="Marriot Fairfield Inn Portsmouth Downtown" class="gray-bg" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="hotel-item">
+                            <a href="http://www.marriott.com/hotels/travel/psmdt-residence-inn-portsmouth-downtown-waterfront/" title="Residence Inn Portsmouth Downtown/Waterfront" target="_blank">
+                                <img src="http://cache.marriott.com/propertyimages/brandgeneric/ri/ri_logo_L.png" title="Residence Inn Portsmouth Downtown/Waterfront" class="gray-bg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="registry" class="content fade">
+        <section id="story" class="content">
+            <div class="container">
+                <h1>Our Story</h1>
+
+                <div class="row">
+                    <div class="column">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="party" class="content pink">
+
+        </section>
+
+        <section id="registry" class="content">
             <div class="container">
                 <h1>Registry</h1>
                 <p>
@@ -117,7 +152,7 @@
                 </p>
 
                 <div class="row registries">
-                    <div class="six columns">
+                    <div class="column">
                         <div class="registry-item">
                             <a href="https://www.zola.com/registry/jessica-joshua" title="Zola Wedding Registry" target="_blank">
                                 <img src="assets/images/zola.png" title="Zola Wedding Registry" />
@@ -128,57 +163,7 @@
             </div>
         </section>
 
-        <!--
-            Are you attending?
-            First Name
-            Last Name
-
-            // if not attending
-            Regrets
-
-            // if attending
-            Email
-            If invitation indicates a plus 1, are they attending?
-
-            Submit
-
-        -->
-
-        <section id="rsvp" class="content pink fade">
-            <div class="container">
-                <h1>RSVP</h1>
-                <p class="subtitle">Please RSVP by July 1st, 2016</p>
-
-                <form id="rsvp-form" class="rsvp-form" name="rsvp-form">
-                    <div class="initial-question">
-                        <div class="radio-group hidden">
-                            <p>Will you be attending?*</p>
-                            <div class="six columns">
-                                <input type="radio" id="attending-yes" name="attending" value="Yes" />
-                                <div class="option yes">Yes</div>
-                            </div>
-                            <div class="six columns">
-                                <input type="radio" id="attending-no" name="attending" value="No" />
-                                <div class="option no">No</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="attending">
-                        <input type="text" name="fname" id="fname" placeholder="First Name" />
-                        <input type="text" name="lname" id="lname" placeholder="Last Name" />
-
-                        <input type="submit" class="button" value="Submit" />
-                    </div>
-
-                    <div class="non-attending">
-
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <section id="photos" class="content fade">
+        <section id="photos" class="content pink">
             <div class="container">
                 <h1>Photos</h1>
                 <p>Photos by <a href="http://www.dreambignh.com" target="_blank">Savannah Nemiccolo</a></p>
@@ -200,7 +185,13 @@
         </section>
 
         <footer>
-
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        Made by the Groom. Inspired by his better half <i class="fa fa-heart fa-1x"></i>
+                    </div>
+                </div>
+            </div>
         </footer>
 
     </div>
@@ -218,7 +209,7 @@
     <!-- Initiate the auto smooth scroll for the menu -->
     <script>
         $(document).ready(function () {
-            $('nav a').on('click', function (e) {
+            $('nav a, .mobile a').on('click', function (e) {
                 e.preventDefault();
                 $('html,body').scrollTo(this.hash, this.hash);
             });

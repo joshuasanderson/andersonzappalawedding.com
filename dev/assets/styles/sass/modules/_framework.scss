@@ -1,0 +1,20 @@
+#wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container:after,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

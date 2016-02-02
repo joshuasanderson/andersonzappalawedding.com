@@ -1,0 +1,65 @@
+
+.full-screen-image {
+    background-image: url(http://dev.andersonzappalawedding.com/assets/images/hero.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    position:relative;
+    height:100vh;
+
+    .full-screen-image-title {
+        position:absolute;
+        top:52.5%;
+        text-align:center;
+        width:100%;
+        -ms-transform: translate(0,-50%); /* IE 9 */
+        -webkit-transform: translate(0,-50%); /* Safari */
+        transform: translate(0,-50%);
+        color: $white;
+
+        .top {
+            margin: 5.5em auto 0.3em;
+            font-family: $hero-font-serif;
+            text-transform: uppercase;
+            font-style: italic;
+            line-height: 3em;
+            font-size: 6vw;
+            font-weight: 400;
+            line-height: 1.1;
+
+            opacity: 0;
+            transform: translate(0, -0.2em);
+            animation: come-home 0.25s ease forwards;
+            animation-delay: 1s;
+        }
+
+        .bottom {
+            font-family: $hero-font-sans;
+            line-height: 3em;
+            font-size: 4vw;
+            font-weight: 100;
+            line-height: 1.1;
+
+            opacity: 0;
+            transform: translate(0, -0.2em);
+            animation: come-home 0.5s ease forwards;
+            animation-delay: .75s;
+        }
+    }
+}
+
+@keyframes come-home {
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@media (max-width: $extra-large) {
+    .full-screen-image {
+        background-position: 65% 50%;
+    }
+}
+
+@media (max-width: $medium) {
+
+}

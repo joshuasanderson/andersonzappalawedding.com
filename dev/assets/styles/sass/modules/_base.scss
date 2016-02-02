@@ -1,0 +1,27 @@
+html {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white;
+    font-size: 1em;
+    font-family: $base-font-family;
+    font-weight: 400;
+    font-style: normal;
+    color: $base-grey;
+    line-height: 1.9em;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    position: relative;
+}
+
+// Credits: The New Box Sizing Reset - http://callmenick.com/post/the-new-box-sizing-reset
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
